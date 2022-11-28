@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('./_vars.css');
+
+html, body{
+    font-size: var(--main-font-size);
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+.menu{
+    padding: 28px 0;
+    list-style: none;
+    text-align: center;
+    font-size: 0;
+    position: relative;
+}
+.menu::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: var(--main-color-menu);
+}
+.menu_item{
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 1rem;
+
+}
+.menu_item:hover > .menu_link{
+    color: var(--main-color-text);
+}
+.menu_link{
+    text-decoration: none;
+    color: var(--main-color-menu);
+    transition: all 0.2s linear;
+}
+/* ------Main----- */
+
+.banner_tittle{
+    font-weight: 600;
+    font-size: 48px;
+    margin: 15px 0 40px 0;
+}
+.banner_picture img{
+    object-fit: contain;
+    width: 100%;
+    font-size: 0;
+    display: block;
+}
+
+.about{
+    text-align: center;
+    padding: 100px 0;
+    background: var(--backgraund-additional);
+}
+
+.tittle_2{
+    font-size: 1.89rem;
+    color: var(--main-color-text);
+    margin: 0;
+    text-align: center;
+}
+
+.about_text{
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+.about_text p{
+    margin: 0 0 30px;
+}
+.about_text p:first-child{
+    margin-top: 50px;
+}
+.about_text p:last-child{
+    margin: 0;
+}
+
+.skills{
+    text-align: center;
+    margin: 100px 0;
+}
+.sub-tittle{
+    text-align: center;
+    font-size: inherit;
+    margin: 20px 0 50px;
+    font-weight: 400;
+}
+
+.skills_list{
+    padding-left: 0;
+    list-style: none;
+    font-size: 0;
+}
+.skills_item{
+    display: inline-block;
+    width: 170px;
+    height: 230px;
+    margin-right: 96px ;
+}
+.skills_item:last-child{
+    margin-right: 0;
+}
+.item_tittle{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--main-color-menu);
+    margin: 25px 0 0;
+}
+.stars{
+    margin-top: 60px;
+}
+.stars img{
+    width: 26px;
+    margin-right: 10px;
+}
+.stars img:last-child{
+    margin: 0;
+}
+.portfolio{
+    background: var(--backgraund-additional);
+    padding: 100px 0;
+}
+.fashion img{
+    margin-top: 50px;
+}
+.rebook_img, .braun_img{
+    margin-top: 70px;
+}
+.portfolio p{
+    text-align: center;
+    margin: 40px 0 0;
+}
+.contacts{
+    padding: 100px 0;
+}
+.button{
+    width: 180px;
+    height: 44px;
+    border: none;
+    background: var(--main-color-text);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 22px;
+    display: block;
+    margin: 0 auto;
+}
+.social{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.social_link{
+    margin-left: 0;
+    list-style-type: none;
+    margin-top: 30px;
+}
+.social_link li{
+    float: left;
+}
+.social_link li{
+    display: inline-block;
+    text-align: center;
+    font-size: 0;
+    margin-right: 50px;
+}
+.social_link li:last-child{
+    margin: 0;
+}
+.like_me{
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--main-color-menu);
+    margin-top: 120px;
+}
